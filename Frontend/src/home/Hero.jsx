@@ -56,7 +56,7 @@ export default function Hero() {
                 Your way to
               </p>
               <p
-                className="-ml-1 -mt-1 rotate-[-3deg] text-[clamp(3.3rem,5.8vw,5.3rem)] font-black italic leading-[.92] tracking-[-.1em] text-red-600"
+                className="-ml-1 mt-1 inline-block max-w-full rotate-[-2deg] whitespace-nowrap text-[clamp(2.9rem,13vw,4.2rem)] font-black italic leading-none tracking-[-.035em] text-red-600 sm:-mt-1 sm:text-[clamp(3.5rem,7vw,5.3rem)] sm:tracking-[-.025em] lg:text-[clamp(4rem,5.4vw,5.3rem)]"
                 style={{ fontFamily: "'Brush Script MT', 'Segoe Script', cursive" }}
               >
                 Greatness
