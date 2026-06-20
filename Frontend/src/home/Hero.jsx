@@ -55,8 +55,14 @@ export default function Hero() {
               <p className="ml-[30%] mt-3 text-[clamp(1.3rem,2.3vw,2.35rem)] font-black italic uppercase leading-none tracking-[-.05em]">
                 Your way to
               </p>
-              <p
+              {/* <p
                 className="-ml-1 mt-1 inline-block max-w-full rotate-[-2deg] whitespace-nowrap text-[clamp(2.9rem,13vw,4.2rem)] font-black italic leading-none tracking-[-.035em] text-red-600 sm:-mt-1 sm:text-[clamp(3.5rem,7vw,5.3rem)] sm:tracking-[-.025em] lg:text-[clamp(4rem,5.4vw,5.3rem)]"
+                style={{ fontFamily: "'Brush Script MT', 'Segoe Script', cursive" }}
+              >
+                Greatness
+              </p> */}
+              <p
+                className="-ml-1 mt-1 inline-block max-w-full rotate-[-2deg] italic text-red-600 text-7xl font-bold "
                 style={{ fontFamily: "'Brush Script MT', 'Segoe Script', cursive" }}
               >
                 Greatness
