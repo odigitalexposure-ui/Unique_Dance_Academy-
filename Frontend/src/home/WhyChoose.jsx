@@ -54,7 +54,7 @@ export default function WhyChoose() {
               Why Choose Us
             </span>
 
-            <h2 className="mt-6 text-4xl font-black uppercase leading-tight text-[#111111] sm:text-5xl lg:text-6xl">
+            <h2 className="mt-6 text-3xl font-black uppercase leading-[1.12] tracking-[-.025em] text-[#111111] [word-spacing:.1em] sm:text-4xl lg:text-5xl">
               Learn Dance With
               <span className="block text-red-600">Energy & Confidence</span>
             </h2>
@@ -68,21 +68,21 @@ export default function WhyChoose() {
             <div className="mt-8 overflow-hidden rounded-[2rem] bg-[#111111] p-6 text-white shadow-2xl">
               <div className="grid grid-cols-3 gap-4 text-center">
                 <div>
-                  <h3 className="text-3xl font-black text-red-500">10+</h3>
+                  <h3 className="text-2xl font-black text-red-500">10+</h3>
                   <p className="mt-1 text-xs uppercase tracking-widest text-gray-300">
                     Styles
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="text-3xl font-black text-red-500">2021</h3>
+                  <h3 className="text-2xl font-black text-red-500">2021</h3>
                   <p className="mt-1 text-xs uppercase tracking-widest text-gray-300">
                     Since
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="text-3xl font-black text-red-500">All</h3>
+                  <h3 className="text-2xl font-black text-red-500">All</h3>
                   <p className="mt-1 text-xs uppercase tracking-widest text-gray-300">
                     Levels
                   </p>

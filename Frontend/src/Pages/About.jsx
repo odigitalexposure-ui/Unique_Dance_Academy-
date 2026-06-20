@@ -39,7 +39,7 @@ export default function About() {
           </p>
 
           <div className="mt-8 grid gap-10 lg:grid-cols-[1fr_430px] lg:items-end">
-            <h1 className="max-w-5xl text-[clamp(4rem,9vw,9rem)] font-black uppercase leading-[.78] tracking-[-.085em]">
+            <h1 className="max-w-5xl text-[clamp(3rem,7vw,6.5rem)] font-black uppercase leading-[1.08] tracking-[-.035em]">
               Dance with
               <span className="block text-[#ffb9b8]">purpose.</span>
             </h1>
@@ -75,7 +75,7 @@ export default function About() {
             <p className="text-[10px] font-black uppercase tracking-[.25em] text-red-600">
               Our story
             </p>
-            <h2 className="mt-5 max-w-3xl text-[clamp(3.2rem,6vw,6rem)] font-black uppercase leading-[.86] tracking-[-.07em]">
+            <h2 className="mt-5 max-w-3xl text-[clamp(2.5rem,4.7vw,4.7rem)] font-black uppercase leading-[.9] tracking-[-.06em]">
               More than a
               <span className="block text-red-600">dance studio.</span>
             </h2>
@@ -117,7 +117,7 @@ export default function About() {
             <p className="text-[10px] font-black uppercase tracking-[.25em] text-red-600">
               What guides us
             </p>
-            <h2 className="mt-5 text-4xl font-black uppercase leading-[.9] tracking-[-.06em] sm:text-5xl">
+            <h2 className="mt-5 text-3xl font-black uppercase leading-[.92] tracking-[-.05em] sm:text-4xl">
               Simple values.
               <span className="block text-red-600">Meaningful progress.</span>
             </h2>
@@ -148,7 +148,7 @@ export default function About() {
               <p className="text-[9px] font-black uppercase tracking-[.22em] text-red-500">
                 Your journey can start here
               </p>
-              <h2 className="mt-4 max-w-3xl text-4xl font-black uppercase leading-[.9] tracking-[-.06em] sm:text-5xl">
+              <h2 className="mt-4 max-w-3xl text-3xl font-black uppercase leading-[.92] tracking-[-.05em] sm:text-4xl">
                 Find the class that moves you.
               </h2>
             </div>

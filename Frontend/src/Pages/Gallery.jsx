@@ -105,7 +105,7 @@ export default function Gallery() {
               <p className="text-[11px] font-black uppercase tracking-[.28em] text-red-100">
                 Unique Dance Academy
               </p>
-              <h1 className="mt-4 text-[clamp(4rem,9vw,9rem)] font-black uppercase leading-[.78] tracking-[-.085em]">
+              <h1 className="mt-4 text-[clamp(3rem,7vw,6.5rem)] font-black uppercase leading-[1.08] tracking-[-.035em]">
                 Our gallery
               </h1>
             </div>
@@ -250,7 +250,7 @@ export default function Gallery() {
               <span className="text-[9px] font-black uppercase tracking-[.22em] text-red-400">
                 {activeItem.category}
               </span>
-              <h2 className="mt-3 text-3xl font-black uppercase leading-none">
+              <h2 className="mt-3 text-2xl font-black uppercase leading-none">
                 {activeItem.title}
               </h2>
               <p className="mt-4 text-sm leading-6 text-white/60">

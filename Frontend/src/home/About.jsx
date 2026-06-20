@@ -85,7 +85,7 @@ export default function About() {
               About Unique Dance Academy
             </div>
 
-            <h2 className="mt-6 max-w-[680px] text-[clamp(3.2rem,6.3vw,6.4rem)] font-black uppercase leading-[.85] tracking-[-.075em]">
+            <h2 className="mt-6 max-w-[680px] text-[clamp(2.5rem,4.8vw,4.8rem)] font-black uppercase leading-[1.08] tracking-[-.035em] [word-spacing:.1em]">
               More than
               <span className="block text-red-600">dance steps.</span>
             </h2>

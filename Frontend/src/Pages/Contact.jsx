@@ -93,7 +93,7 @@ Message: ${formData.message}`;
             Contact Us
           </span>
 
-          <h2 className="mt-6 text-4xl font-black uppercase leading-tight text-[#111111] sm:text-5xl lg:text-6xl">
+          <h2 className="mt-6 text-3xl font-black uppercase leading-tight text-[#111111] sm:text-4xl lg:text-5xl">
             Start Your Dance
             <span className="block text-red-600">Journey Today</span>
           </h2>
@@ -152,7 +152,7 @@ Message: ${formData.message}`;
         <div className="mt-16 grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
           {/* Form */}
           <div className="rounded-[2rem] bg-[#111111] p-6 text-white shadow-2xl sm:p-8">
-            <h3 className="text-3xl font-black uppercase">
+            <h3 className="text-2xl font-black uppercase">
               Send Message
             </h3>
 

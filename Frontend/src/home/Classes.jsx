@@ -59,7 +59,7 @@ export default function Classes() {
               <Sparkles size={16} />
               Find your movement
             </div>
-            <h2 className="mt-5 max-w-[800px] text-[clamp(3.2rem,6.5vw,6.8rem)] font-black uppercase leading-[.84] tracking-[-.075em]">
+            <h2 className="mt-5 max-w-[800px] text-[clamp(2.5rem,4.8vw,4.8rem)] font-black uppercase leading-[1.08] tracking-[-.035em] [word-spacing:.1em]">
               Classes with
               <span className="block text-red-600">real energy.</span>
             </h2>
@@ -108,7 +108,7 @@ export default function Classes() {
                   <p className="text-[9px] font-bold uppercase tracking-[.2em] text-red-300">
                     {item.subtitle}
                   </p>
-                  <h3 className="mt-2 text-4xl font-black uppercase tracking-[-.055em]">
+                  <h3 className="mt-2 text-3xl font-black uppercase tracking-[-.045em]">
                     {item.title}
                   </h3>
                 </div>

@@ -202,7 +202,7 @@ export default function ClassesPage() {
             Classes for every journey
           </p>
           <div className="mt-8 grid gap-10 lg:grid-cols-[1fr_430px] lg:items-end">
-            <h1 className="text-[clamp(4rem,9vw,9rem)] font-black uppercase leading-[.78] tracking-[-.085em]">
+            <h1 className="text-[clamp(3rem,7vw,6.5rem)] font-black uppercase leading-[1.08] tracking-[-.035em]">
               Learn. Move.
               <span className="block text-[#ffb9b8]">Become.</span>
             </h1>
@@ -263,7 +263,7 @@ export default function ClassesPage() {
               <p className="text-[10px] font-black uppercase tracking-[.25em] text-red-600">
                 Explore our programs
               </p>
-              <h2 className="mt-5 text-[clamp(3.2rem,6.5vw,6.8rem)] font-black uppercase leading-[.84] tracking-[-.075em]">
+              <h2 className="mt-5 text-[clamp(2.5rem,4.8vw,4.8rem)] font-black uppercase leading-[.88] tracking-[-.065em]">
                 Choose how
                 <span className="block text-red-600">you want to grow.</span>
               </h2>
@@ -299,7 +299,7 @@ export default function ClassesPage() {
                   </div>
                 </div>
 
-                <h3 className="relative mt-6 text-2xl font-black uppercase tracking-[-.035em] sm:text-3xl">
+                <h3 className="relative mt-6 text-xl font-black uppercase tracking-[-.035em] sm:text-2xl">
                   {item.title}
                 </h3>
                 <p className="mt-3 font-semibold leading-6 text-[#4e453f]">
@@ -358,7 +358,7 @@ export default function ClassesPage() {
               <p className="text-[10px] font-black uppercase tracking-[.25em] text-red-600">
                 Your learning journey
               </p>
-              <h2 className="mt-5 text-4xl font-black uppercase leading-[.9] tracking-[-.06em] sm:text-5xl">
+              <h2 className="mt-5 text-3xl font-black uppercase leading-[.92] tracking-[-.05em] sm:text-4xl">
                 From interest
                 <span className="block text-red-600">to confidence.</span>
               </h2>
@@ -396,7 +396,7 @@ export default function ClassesPage() {
                 <p className="text-[9px] font-black uppercase tracking-[.22em] text-red-200">
                   Need help choosing?
                 </p>
-                <h2 className="mt-4 max-w-3xl text-4xl font-black uppercase leading-[.9] tracking-[-.06em] sm:text-5xl lg:text-6xl">
+                <h2 className="mt-4 max-w-3xl text-3xl font-black uppercase leading-[.92] tracking-[-.05em] sm:text-4xl lg:text-5xl">
                   Let&apos;s find the right class for you.
                 </h2>
                 <p className="mt-5 max-w-2xl text-sm leading-7 text-white/70">

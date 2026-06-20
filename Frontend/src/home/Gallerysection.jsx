@@ -16,7 +16,7 @@ export default function Gallerysection() {
               <Images size={16} />
               Inside our world
             </div>
-            <h2 className="mt-5 text-[clamp(3.2rem,6.5vw,6.7rem)] font-black uppercase leading-[.84] tracking-[-.075em]">
+            <h2 className="mt-5 text-[clamp(2.5rem,4.8vw,4.8rem)] font-black uppercase leading-[1.08] tracking-[-.035em] [word-spacing:.1em]">
               Moments that
               <span className="block text-red-600">move with us.</span>
             </h2>

@@ -28,7 +28,7 @@ export default function Testimonials() {
             Student Reviews
           </span>
 
-          <h2 className="mt-6 text-4xl font-black uppercase leading-tight text-[#111111] sm:text-5xl lg:text-6xl">
+          <h2 className="mt-6 text-3xl font-black uppercase leading-[1.12] tracking-[-.025em] text-[#111111] [word-spacing:.1em] sm:text-4xl lg:text-5xl">
             Loved By Students
             <span className="block text-red-600">& Parents</span>
           </h2>
@@ -83,7 +83,7 @@ export default function Testimonials() {
         <div className="mt-16 rounded-[2rem] bg-[#111111] p-8 text-center text-white shadow-2xl">
           <MessageCircle className="mx-auto text-red-500" size={42} />
 
-          <h3 className="mt-4 text-3xl font-black uppercase">
+          <h3 className="mt-4 text-2xl font-black uppercase">
             Want To Experience It Yourself?
           </h3>
 

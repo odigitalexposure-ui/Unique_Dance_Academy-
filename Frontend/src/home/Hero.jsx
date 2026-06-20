@@ -42,28 +42,28 @@ export default function Hero() {
 
       <div className="relative z-10 mx-auto flex min-h-screen max-w-[1480px] flex-col px-5 pb-7 pt-[126px] sm:px-8 lg:px-10 lg:pt-[145px]">
         <div className="flex flex-1 items-center">
-          <div className="w-full max-w-[640px] pb-10 lg:pb-0">
-            <p className="mb-4 text-[12px] font-medium uppercase tracking-[.12em] text-white/90 sm:text-[15px]">
+          <div className="relative left-3 w-full max-w-[640px] pb-10 sm:left-6 lg:left-10 lg:pb-0 xl:left-16">
+            <p className="mb-4 text-[10px] font-medium uppercase tracking-[.12em] text-white/90 sm:text-[13px]">
               Where <span className="font-bold text-red-600">passion</span> meets{" "}
               <span className="font-bold text-red-600">performance</span>
             </p>
 
             <div className="relative">
-              <h1 className="font-sans text-[clamp(4.5rem,10vw,7.5rem)] font-black uppercase leading-[.72] tracking-[-.03em] drop-shadow-2xl">
+              <h1 className="font-sans text-[clamp(3.3rem,6.8vw,5.6rem)] font-black uppercase leading-[.78] tracking-[-.03em] drop-shadow-2xl">
                 Dance
               </h1>
-              <p className="ml-[33%] mt-3 text-[clamp(1.8rem,3.3vw,3.4rem)] font-black italic uppercase leading-none tracking-[-.05em]">
+              <p className="ml-[30%] mt-3 text-[clamp(1.3rem,2.3vw,2.35rem)] font-black italic uppercase leading-none tracking-[-.05em]">
                 Your way to
               </p>
               <p
-                className="-ml-1 -mt-2 rotate-[-3deg] text-[clamp(4.7rem,8vw,7.2rem)] font-black italic sm:leading-[.99] tracking-[-.1em] text-red-600"
+                className="-ml-1 -mt-1 rotate-[-3deg] text-[clamp(3.3rem,5.8vw,5.3rem)] font-black italic leading-[.92] tracking-[-.1em] text-red-600"
                 style={{ fontFamily: "'Brush Script MT', 'Segoe Script', cursive" }}
               >
                 Greatness
               </p>
             </div>
 
-            <p className="mt-8 max-w-[530px] text-[14px] leading-7 text-white/90 sm:text-[16px]">
+            <p className="mt-7 max-w-[500px] text-[13px] leading-6 text-white/90 sm:text-[14px]">
               Unique Dance Academy is more than just a dance studio.
               <br className="hidden sm:block" /> It&apos;s a place to grow,
               express, and shine.
@@ -72,14 +72,14 @@ export default function Hero() {
             <div className="mt-7 flex flex-wrap gap-4">
               <Link
                 to="/contact"
-                className="flex items-center gap-6 rounded-full bg-red-600 px-7 py-4 text-[13px] font-black uppercase shadow-[0_14px_36px_rgba(220,0,20,.3)] transition hover:-translate-y-1 hover:bg-red-700"
+                className="flex items-center gap-5 rounded-full bg-red-600 px-6 py-3.5 text-[11px] font-black uppercase shadow-[0_14px_36px_rgba(220,0,20,.3)] transition hover:-translate-y-1 hover:bg-red-700"
               >
                 Join a class <ArrowRight size={17} />
               </Link>
               <Link to="/gallery">
               <button
                 type="button"
-                className="flex items-center gap-4 rounded-full border border-white/35 bg-black/20 px-7 py-4 text-[13px] font-black uppercase backdrop-blur-sm transition hover:border-red-500 hover:text-red-500"
+                className="flex items-center gap-4 rounded-full border border-white/35 bg-black/20 px-6 py-3.5 text-[11px] font-black uppercase backdrop-blur-sm transition hover:border-red-500 hover:text-red-500"
               >
                 <span className="grid h-6 w-6 place-items-center rounded-full border border-white">
                   <Play size={11} fill="currentColor" />
@@ -142,7 +142,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute left-7 top-[38%] z-20 hidden flex-col items-center gap-9 text-white/85 xl:flex">
+      <div className="absolute left-7 top-[40%] z-20 hidden flex-col items-center gap-7 text-white/85 xl:flex">
         <a
           href="https://www.facebook.com/share/1EMzzoY7i9/?mibextid=wwXIfr"
           target="_blank"
@@ -150,7 +150,7 @@ export default function Hero() {
           aria-label="Facebook"
           className="transition hover:text-red-500"
         >
-          <FaFacebookF size={24} />
+          <FaFacebookF size={17} />
         </a>
         <a
           href="https://www.instagram.com/unique_dance_academy_india?igsh=M3g1aWFvcHF3ZG1y"
@@ -159,7 +159,7 @@ export default function Hero() {
           aria-label="Instagram"
           className="transition hover:text-red-500"
         >
-          <FaInstagram size={25} />
+          <FaInstagram size={18} />
         </a>
         <a
           href="https://youtube.com/@uniquedanceacademyindia4650?feature=shared"
@@ -168,12 +168,12 @@ export default function Hero() {
           aria-label="YouTube"
           className="transition hover:text-red-500"
         >
-          <FaYoutube size={25} />
+          <FaYoutube size={18} />
         </a>
-        <span className="mt-5 [writing-mode:vertical-rl] rotate-180 text-[13px] font-bold uppercase tracking-[.38em]">
+        <span className="mt-4 [writing-mode:vertical-rl] rotate-180 text-[10px] font-bold uppercase tracking-[.34em]">
           Follow us
         </span>
-        <span className="h-32 w-[2px] bg-red-600" />
+        <span className="h-24 w-px bg-red-600" />
       </div>
 
       <div className="pointer-events-none absolute bottom-12 right-3 hidden opacity-60 2xl:block">
