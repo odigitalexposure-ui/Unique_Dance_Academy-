@@ -40,7 +40,7 @@ export default function About() {
 
       <div className="relative mx-auto max-w-[1380px] px-5 sm:px-8 lg:px-10">
         <div className="grid items-center gap-14 lg:grid-cols-[1.02fr_.98fr] lg:gap-20">
-          <div className="relative mx-auto w-full max-w-[640px] pb-14 sm:pr-14 lg:mx-0">
+          <div className="relative mx-auto w-full max-w-[640px] sm:pb-14 sm:pr-14 lg:mx-0">
             <div className="relative h-[470px] overflow-hidden rounded-[2rem] bg-[#d8d0c5] sm:h-[620px]">
               <img
                 src="/g2.jpeg"
@@ -63,7 +63,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="absolute -bottom-2 right-0 w-[44%] overflow-hidden rounded-[1.4rem] border-[7px] border-[#f5f0e8] bg-white shadow-2xl">
+            <div className="absolute -bottom-2 right-0 hidden w-[44%] overflow-hidden rounded-[1.4rem] border-[7px] border-[#f5f0e8] bg-white shadow-2xl sm:block">
               <img
                 src="/g1.jpeg"
                 alt="Unique Dance Academy with guest artists"
