@@ -143,47 +143,55 @@ export default function Gallery() {
 
         <div className="columns-1 gap-5 sm:columns-2 lg:columns-3">
           {visibleMedia.map((item) => (
-            <button
-              type="button"
+            <article
               key={item.id}
-              onClick={() => openItem(item.id)}
-              className="group relative mb-5 block w-full break-inside-avoid overflow-hidden rounded-[1.5rem] bg-[#ddd3c9] text-left shadow-[0_16px_50px_rgba(52,35,23,.09)]"
+              className="group relative mb-5 block w-full break-inside-avoid overflow-hidden rounded-[1.5rem] border border-[#181310]/10 bg-white shadow-[0_16px_50px_rgba(52,35,23,.09)]"
             >
-              <div className={item.ratio}>
+              <div className="relative overflow-hidden bg-[#171210]">
                 {item.type === "image" ? (
+                  <button
+                    type="button"
+                    onClick={() => openItem(item.id)}
+                    className="block w-full cursor-zoom-in"
+                    aria-label={`View ${item.title}`}
+                  >
                   <img
                     src={item.src}
                     alt={item.title}
-                    className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                      className="h-auto w-full"
                   />
+                  </button>
                 ) : (
                   <video
                     src={item.src}
-                    poster={item.poster}
-                    muted
+                    controls
                     playsInline
                     preload="metadata"
-                    className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                    className="h-auto w-full bg-black"
                   />
                 )}
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#190b08]/85 via-transparent to-transparent opacity-80 transition group-hover:opacity-100" />
-              <span className="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-white/90 text-red-600 opacity-100 shadow-lg transition sm:opacity-0 sm:group-hover:opacity-100">
+                <button
+                  type="button"
+                  onClick={() => openItem(item.id)}
+                  aria-label={`Open ${item.title} full screen`}
+                  className="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-white/90 text-red-600 shadow-lg transition hover:bg-red-600 hover:text-white"
+                >
                 {item.type === "video" ? (
                   <Play size={15} fill="currentColor" />
                 ) : (
                   <Expand size={16} />
                 )}
-              </span>
-              <div className="absolute inset-x-0 bottom-0 p-5 text-white sm:p-6">
-                <span className="text-[8px] font-black uppercase tracking-[.2em] text-red-300">
+                </button>
+              </div>
+              <div className="p-5 sm:p-6">
+                <span className="text-[8px] font-black uppercase tracking-[.2em] text-red-600">
                   {item.category}
                 </span>
-                <h2 className="mt-1 text-xl font-black uppercase">
+                <h2 className="mt-1 text-xl font-black uppercase text-[#181310]">
                   {item.title}
                 </h2>
               </div>
-            </button>
+            </article>
           ))}
         </div>
       </section>
@@ -238,7 +246,6 @@ export default function Gallery() {
                 <video
                   key={activeItem.id}
                   src={activeItem.src}
-                  poster={activeItem.poster}
                   controls
                   autoPlay
                   playsInline

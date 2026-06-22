@@ -41,11 +41,11 @@ export default function About() {
       <div className="relative mx-auto max-w-[1380px] px-5 sm:px-8 lg:px-10">
         <div className="grid items-center gap-14 lg:grid-cols-[1.02fr_.98fr] lg:gap-20">
           <div className="relative mx-auto w-full max-w-[640px] sm:pb-14 sm:pr-14 lg:mx-0">
-            <div className="relative h-[470px] overflow-hidden rounded-[2rem] bg-[#d8d0c5] sm:h-[620px]">
+            <div className="relative h-full overflow-hidden rounded-[2rem] bg-[#d8d0c5] ">
               <img
-                src="/g2.jpeg"
+                src="/g4.jpeg"
                 alt="Unique Dance Academy training moment"
-                className="h-full w-full object-cover object-top transition duration-700 hover:scale-105"
+                className="h-full w-full object-contain object-top transition duration-700 hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#27110e]/55 via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 flex items-center gap-4 p-6 text-white sm:p-8">
@@ -63,15 +63,15 @@ export default function About() {
               </div>
             </div>
 
-            <div className="absolute -bottom-2 right-0 hidden w-[44%] overflow-hidden rounded-[1.4rem] border-[7px] border-[#f5f0e8] bg-white shadow-2xl sm:block">
+            <div className="absolute -bottom-60 right-0 hidden w-[44%] overflow-hidden rounded-[1.4rem] border-[7px] border-[#f5f0e8] bg-white shadow-2xl sm:block">
               <img
-                src="/g1.jpeg"
+                src="/g6.jpeg"
                 alt="Unique Dance Academy with guest artists"
                 className="aspect-[4/5] w-full object-cover object-top"
               />
             </div>
 
-            <div className="absolute -left-3 -top-10 rounded-2xl bg-red-600 px-5 py-4 text-white shadow-xl sm:-left-8">
+            <div className="absolute -left-3 -top-15 rounded-2xl bg-red-600 px-5 py-4 text-white shadow-xl sm:-left-8">
               <strong className="block text-3xl font-black">2021</strong>
               <span className="text-[9px] font-bold uppercase tracking-[.2em] text-white/75">
                 Our journey began

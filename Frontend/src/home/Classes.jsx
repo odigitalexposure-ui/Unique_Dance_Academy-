@@ -8,7 +8,7 @@ const featuredClasses = [
     subtitle: "Groove · Foundation · Freestyle",
     description:
       "Build rhythm, confidence and powerful movement through foundations, combinations and performance drills.",
-    video: "/v1.mp4",
+    video: "/v4.mp4",
     poster: "/g1.jpeg",
     level: "",
   },
@@ -18,7 +18,7 @@ const featuredClasses = [
     subtitle: "Expression · Energy · Performance",
     description:
       "A vibrant mix of cinematic expression, Indian movement vocabulary and high-energy stage choreography.",
-    video: "/v2.mp4",
+    video: "/v9.mp4",
     poster: "/g2.jpeg",
     level: "",
   },
@@ -28,7 +28,7 @@ const featuredClasses = [
     subtitle: "Musicality · Technique · Stage",
     description:
       "Learn complete routines designed for showcases, events and competitions while sharpening stage presence.",
-    video: "/v3.mp4",
+    video: "/v10.mp4",
     poster: "/g3.jpeg",
     level: "",
   },

@@ -1,59 +1,60 @@
-export const galleryMedia = [
-  {
-    id: 1,
-    type: "image",
-    src: "/g1.jpeg",
-    title: "Studio Connections",
-    category: "Academy Life",
-    description: "Creative moments and memorable guests at Unique Dance Academy.",
-    ratio: "aspect-[4/5]",
-  },
-  {
-    id: 2,
-    type: "video",
-    src: "/v1.mp4",
-    poster: "/g2.jpeg",
-    title: "Hip Hop Session",
-    category: "Class Energy",
-    description: "Rhythm, foundations and confidence in motion.",
-    ratio: "aspect-[3/4]",
-  },
-  {
-    id: 3,
-    type: "image",
-    src: "/g3.jpeg",
-    title: "On The Big Stage",
-    category: "Performances",
-    description: "A proud performance moment featured in the press.",
-    ratio: "aspect-[3/4]",
-  },
-  {
-    id: 4,
-    type: "video",
-    src: "/v2.mp4",
-    poster: "/g1.jpeg",
-    title: "Bollywood Expression",
-    category: "Choreography",
-    description: "Expressive combinations filled with cinematic energy.",
-    ratio: "aspect-[4/5]",
-  },
-  {
-    id: 5,
-    type: "image",
-    src: "/g2.jpeg",
-    title: "Training Together",
-    category: "Academy Life",
-    description: "The people, passion and community behind every class.",
-    ratio: "aspect-[4/5]",
-  },
-  {
-    id: 6,
-    type: "video",
-    src: "/v3.mp4",
-    poster: "/g3.jpeg",
-    title: "Performance Choreography",
-    category: "Performances",
-    description: "Stage-ready choreography, musicality and presence.",
-    ratio: "aspect-[3/4]",
-  },
+const imageDetails = [
+  ["Studio Connections", "Academy Life"],
+  ["Training Together", "Academy Life"],
+  ["On The Big Stage", "Performances"],
+  ["Practice in Progress", "Studio Moments"],
+  ["Achievement Unlocked", "Student Success"],
+  ["Creative Connections", "Academy Memories"],
+  ["Roots in Rhythm", "Cultural Celebration"],
+  ["A Memorable Meeting", "Academy Memories"],
+  ["Proud Academy Moment", "Student Success"],
+  ["Celebrating Progress", "Student Success"],
+  ["Confidence Earned", "Student Success"],
+  ["Another Step Forward", "Student Success"],
+  ["Training Milestone", "Student Success"],
+  ["Lights, Stage, Action", "Live Performance"],
+  ["Festival Expressions", "Cultural Celebration"],
+  ["Move With Energy", "Academy Life"],
+  ["Special Academy Memory", "Academy Memories"],
+  ["Creative Exchange", "Academy Memories"],
 ];
+
+const videoDetails = [
+  ["Hip Hop Session", "Class Energy"],
+  ["Bollywood Expression", "Choreography"],
+  ["Performance Choreography", "Performances"],
+  ["Rhythm in Motion", "Dance Session"],
+  ["Training Showcase", "Dance Session"],
+  ["Studio in Motion", "Dance Session"],
+  ["Performance Practice", "Choreography"],
+  ["Dance Showcase", "Performances"],
+  ["Classroom Energy", "Class Energy"],
+  ["Movement and Musicality", "Dance Session"],
+  ["Performance Pulse", "Choreography"],
+];
+
+const images = imageDetails.map(([title, category], index) => ({
+  id: index + 1,
+  type: "image",
+  src: `/g${index + 1}.jpeg`,
+  title,
+  category,
+  description: "An original moment from Unique Dance Academy.",
+}));
+
+const videos = videoDetails.map(([title, category], index) => ({
+  id: imageDetails.length + index + 1,
+  type: "video",
+  src: `/v${index + 1}.mp4`,
+  title,
+  category,
+  description: "Original video footage from Unique Dance Academy.",
+}));
+
+export const galleryMedia = [...images, ...videos];
+
+const homeGalleryIds = [14, 24, 7, 29, 18];
+
+export const homeGalleryMedia = homeGalleryIds.map((id) =>
+  galleryMedia.find((item) => item.id === id),
+);

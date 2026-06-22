@@ -13,10 +13,10 @@ import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import heroBackground from "../assets/dance-hero-bg.png";
 
 const classes = [
-  { name: "Hip Hop", position: "68% 52%" },
-  { name: "Lyrical", position: "52% 58%" },
-  { name: "Zumba", position: "83% 44%" },
-  { name: "Choreography", position: "94% 50%" },
+  { name: "Hip Hop", image: "/g16.jpeg", position: "center 48%" },
+  { name: "Lyrical", image: "/g14.jpeg", position: "center 42%" },
+  { name: "Zumba", image: "/g15.jpeg", position: "center 32%" },
+  { name: "Choreography", image: "/g7.jpeg", position: "center 34%" },
 ];
 
 const stats = [
@@ -108,7 +108,7 @@ export default function Hero() {
                 <div
                   className="absolute inset-0 scale-110 bg-cover transition duration-500 group-hover:scale-125"
                   style={{
-                    backgroundImage: `url(${heroBackground})`,
+                    backgroundImage: `url(${item.image})`,
                     backgroundPosition: item.position,
                   }}
                 />

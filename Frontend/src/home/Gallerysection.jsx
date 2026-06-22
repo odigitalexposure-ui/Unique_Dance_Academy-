@@ -1,6 +1,6 @@
 import { ArrowRight, Images, Play } from "lucide-react";
 import { Link } from "react-router-dom";
-import { galleryMedia } from "../data/galleryMedia";
+import { homeGalleryMedia } from "../data/galleryMedia";
 
 export default function Gallerysection() {
   return (
@@ -30,7 +30,7 @@ export default function Gallerysection() {
         </div>
 
         <div className="mt-14 grid auto-flow-dense auto-rows-[150px] grid-cols-2 gap-3 sm:auto-rows-[190px] sm:grid-cols-4 lg:auto-rows-[220px]">
-          {galleryMedia.slice(0, 5).map((item, index) => (
+          {homeGalleryMedia.map((item, index) => (
             <Link
               to={`/gallery?item=${item.id}`}
               key={item.id}
@@ -47,8 +47,9 @@ export default function Gallerysection() {
               ) : (
                 <video
                   src={item.src}
-                  poster={item.poster}
                   muted
+                  loop
+                  autoPlay
                   playsInline
                   preload="metadata"
                   className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
