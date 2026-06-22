@@ -95,7 +95,7 @@ export default function About() {
               {[
                 ["10+", "Years experience"],
                 ["500+", "Happy students"],
-                ["20+", "Expert instructors"],
+                // ["20+", "Expert instructors"],
               ].map(([value, label]) => (
                 <div key={label} className="px-3 text-center sm:px-6">
                   <strong className="block text-2xl font-black text-red-600 sm:text-3xl">

@@ -40,7 +40,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-[linear-gradient(0deg,#050505_0%,transparent_35%,rgba(0,0,0,.25)_100%)]" />
       <div className="absolute -left-24 top-[22%] h-80 w-64 rotate-[-18deg] bg-red-700/25 blur-3xl" />
 
-      <div className="relative z-10 mx-auto flex min-h-screen max-w-[1480px] flex-col px-5 pb-7 pt-[126px] sm:px-8 lg:px-10 lg:pt-[145px]">
+      <div className="relative z-10 mx-auto flex min-h-screen max-w-[1480px] flex-col px-5 pb-7 pt-[126px] sm:px-8 lg:px-10 lg:pt-[125px]">
         <div className="flex flex-1 items-center">
           <div className="relative left-3 w-full max-w-[640px] pb-10 sm:left-6 lg:left-10 lg:pb-0 xl:left-16">
             <p className="mb-4 text-[10px] font-medium uppercase tracking-[.12em] text-white/90 sm:text-[13px]">
@@ -75,7 +75,7 @@ export default function Hero() {
               express, and shine.
             </p>
 
-            <div className="mt-7 flex flex-wrap gap-4">
+            <div className="mt-7 flex flex-wrap gap-4 mb-7">
               <Link
                 to="/contact"
                 className="flex items-center gap-5 rounded-full bg-red-600 px-6 py-3.5 text-[11px] font-black uppercase shadow-[0_14px_36px_rgba(220,0,20,.3)] transition hover:-translate-y-1 hover:bg-red-700"
