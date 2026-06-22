@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import { Link, useSearchParams } from "react-router-dom";
 import { galleryMedia } from "../data/galleryMedia";
+import OptimizedVideo from "../common/OptimizedVideo";
 
 const filters = [
   { value: "all", label: "All moments", icon: Images },
@@ -158,11 +159,13 @@ export default function Gallery() {
                   <img
                     src={item.src}
                     alt={item.title}
-                      className="h-auto w-full"
+                    loading="lazy"
+                    decoding="async"
+                    className="h-auto w-full"
                   />
                   </button>
                 ) : (
-                  <video
+                  <OptimizedVideo
                     src={item.src}
                     controls
                     playsInline
@@ -240,12 +243,14 @@ export default function Gallery() {
                   key={activeItem.id}
                   src={activeItem.src}
                   alt={activeItem.title}
+                  decoding="async"
                   className="max-h-[70dvh] w-full object-contain lg:max-h-[92dvh]"
                 />
               ) : (
-                <video
+                <OptimizedVideo
                   key={activeItem.id}
                   src={activeItem.src}
+                  eager
                   controls
                   autoPlay
                   playsInline

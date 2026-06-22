@@ -17,6 +17,9 @@ const imageDetails = [
   ["Move With Energy", "Academy Life"],
   ["Special Academy Memory", "Academy Memories"],
   ["Creative Exchange", "Academy Memories"],
+  ["Young Dancers Together", "Kids Class"],
+  ["Celebrating as One", "Kids Class"],
+  ["Little Groovers in Motion", "Kids Training"],
 ];
 
 const videoDetails = [
@@ -53,7 +56,7 @@ const videos = videoDetails.map(([title, category], index) => ({
 
 export const galleryMedia = [...images, ...videos];
 
-const homeGalleryIds = [14, 24, 7, 29, 18];
+const homeGalleryIds = [14, 27, 7, 32, 18];
 
 export const homeGalleryMedia = homeGalleryIds.map((id) =>
   galleryMedia.find((item) => item.id === id),

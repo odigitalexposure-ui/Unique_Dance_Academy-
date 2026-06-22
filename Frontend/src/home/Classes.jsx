@@ -1,5 +1,6 @@
 import { ArrowRight, Clock3, Play, Sparkles, UsersRound } from "lucide-react";
 import { Link } from "react-router-dom";
+import OptimizedVideo from "../common/OptimizedVideo";
 
 const featuredClasses = [
   {
@@ -85,7 +86,7 @@ export default function Classes() {
               className="group overflow-hidden rounded-[1.8rem] border border-[#181310]/10 bg-white shadow-[0_20px_65px_rgba(55,35,20,.08)] transition duration-500 hover:-translate-y-2 hover:shadow-[0_28px_80px_rgba(55,35,20,.15)]"
             >
               <div className="relative aspect-[4/5] overflow-hidden bg-[#d7cec4]">
-                <video
+                <OptimizedVideo
                   className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
                   src={item.video}
                   poster={item.poster}

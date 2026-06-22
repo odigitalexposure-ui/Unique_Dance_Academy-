@@ -60,6 +60,8 @@ export default function Navbar() {
           <img
             src="/logo.png"
             alt="Unique Dance Academy logo"
+            decoding="async"
+            fetchPriority="high"
             className="h-26 w-26 object-contain drop-shadow-[0_5px_15px_rgba(0,0,0,.45)]"
           />
           <span className="leading-none">
@@ -141,6 +143,7 @@ export default function Navbar() {
             <img
               src="/logo.png"
               alt="Unique Dance Academy logo"
+              decoding="async"
               className="h-14 w-14 object-contain"
             />
             <span className="text-lg font-black">

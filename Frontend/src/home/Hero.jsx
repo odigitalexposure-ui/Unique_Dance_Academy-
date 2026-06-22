@@ -34,6 +34,8 @@ export default function Hero() {
       <img
         src={heroBackground}
         alt=""
+        decoding="async"
+        fetchPriority="high"
         className="absolute inset-0 h-full w-full object-cover object-[70%_center] md:object-center"
       />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,#050505_0%,rgba(5,5,5,.92)_25%,rgba(5,5,5,.34)_56%,rgba(5,5,5,.05)_100%)]" />
@@ -105,12 +107,13 @@ export default function Hero() {
                 key={item.name}
                 className="group relative h-[105px] overflow-hidden rounded-lg border border-white/10 bg-[#181818] sm:h-[145px]"
               >
-                <div
-                  className="absolute inset-0 scale-110 bg-cover transition duration-500 group-hover:scale-125"
-                  style={{
-                    backgroundImage: `url(${item.image})`,
-                    backgroundPosition: item.position,
-                  }}
+                <img
+                  src={item.image}
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  className="absolute inset-0 h-full w-full scale-110 object-cover transition duration-500 group-hover:scale-125"
+                  style={{ objectPosition: item.position }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/25 to-transparent" />
                 <span className="absolute inset-x-0 bottom-4 text-center text-[11px] font-bold uppercase tracking-[.14em] sm:text-[13px]">

@@ -45,6 +45,8 @@ export default function About() {
               <img
                 src="/g4.jpeg"
                 alt="Unique Dance Academy training moment"
+                loading="lazy"
+                decoding="async"
                 className="h-full w-full object-contain object-top transition duration-700 hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#27110e]/55 via-transparent to-transparent" />
@@ -65,8 +67,10 @@ export default function About() {
 
             <div className="absolute -bottom-60 right-0 hidden w-[44%] overflow-hidden rounded-[1.4rem] border-[7px] border-[#f5f0e8] bg-white shadow-2xl sm:block">
               <img
-                src="/g6.jpeg"
+                src="/g19.jpeg"
                 alt="Unique Dance Academy with guest artists"
+                loading="lazy"
+                decoding="async"
                 className="aspect-[4/5] w-full object-cover object-top"
               />
             </div>

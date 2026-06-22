@@ -60,6 +60,8 @@ export default function About() {
               <img
                 src="/g2.jpeg"
                 alt="Unique Dance Academy training community"
+                loading="lazy"
+                decoding="async"
                 className="aspect-[4/5] w-full object-cover object-top"
               />
             </div>

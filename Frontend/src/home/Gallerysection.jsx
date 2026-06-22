@@ -1,6 +1,7 @@
 import { ArrowRight, Images, Play } from "lucide-react";
 import { Link } from "react-router-dom";
 import { homeGalleryMedia } from "../data/galleryMedia";
+import OptimizedVideo from "../common/OptimizedVideo";
 
 export default function Gallerysection() {
   return (
@@ -42,10 +43,12 @@ export default function Gallerysection() {
                 <img
                   src={item.src}
                   alt={item.title}
+                  loading="lazy"
+                  decoding="async"
                   className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
                 />
               ) : (
-                <video
+                <OptimizedVideo
                   src={item.src}
                   muted
                   loop
