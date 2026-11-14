@@ -20,6 +20,12 @@ const imageDetails = [
   ["Young Dancers Together", "Kids Class"],
   ["Celebrating as One", "Kids Class"],
   ["Little Groovers in Motion", "Kids Training"],
+  ["Stage Spotlight", "Live Performance"],
+  ["Expressions in Motion", "Academy Life"],
+  ["Artistry & Passion", "Performances"],
+  ["Studio Focus", "Studio Moments"],
+  ["Rising Stars", "Student Success"],
+  ["Rhythm in Unity", "Cultural Celebration"],
 ];
 
 const videoDetails = [
@@ -34,6 +40,19 @@ const videoDetails = [
   ["Classroom Energy", "Class Energy"],
   ["Movement and Musicality", "Dance Session"],
   ["Performance Pulse", "Choreography"],
+  ["Freestyle Groove", "Class Energy"],
+  ["Dynamic Choreography", "Choreography"],
+  ["Stage Rehearsal", "Performances"],
+  ["Contemporary Flow", "Dance Session"],
+  ["Urban Street Beats", "Class Energy"],
+  ["Kids Batch Energy", "Kids Training"],
+  ["Rhythm & Coordination", "Dance Session"],
+  ["Intensive Workshop", "Studio Moments"],
+  ["Technique Refinement", "Dance Session"],
+  ["Showcase Routine", "Performances"],
+  ["High-Energy Drills", "Class Energy"],
+  ["Creative Fusion", "Choreography"],
+  ["Grand Finale Performance", "Live Performance"],
 ];
 
 const images = imageDetails.map(([title, category], index) => ({
@@ -56,8 +75,8 @@ const videos = videoDetails.map(([title, category], index) => ({
 
 export const galleryMedia = [...images, ...videos];
 
-const homeGalleryIds = [14, 27, 7, 32, 18];
+const homeGalleryIds = [14, 33, 7, 38, 18];
 
-export const homeGalleryMedia = homeGalleryIds.map((id) =>
-  galleryMedia.find((item) => item.id === id),
-);
+export const homeGalleryMedia = homeGalleryIds
+  .map((id) => galleryMedia.find((item) => item.id === id))
+  .filter(Boolean);

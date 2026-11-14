@@ -1,11 +1,11 @@
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
 
 const PageWrapper = ({ children }) => {
   const location = useLocation();
 
   return (
-    <motion.div
+    <Motion.div
       key={location.pathname} // 🔥 important for route animation
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
@@ -16,7 +16,7 @@ const PageWrapper = ({ children }) => {
       }}
     >
       {children}
-    </motion.div>
+    </Motion.div>
   );
 };
 

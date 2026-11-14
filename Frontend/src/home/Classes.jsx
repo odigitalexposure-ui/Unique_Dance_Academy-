@@ -82,7 +82,7 @@ export default function Classes() {
         <div className="mt-14 grid gap-5 lg:grid-cols-3">
           {featuredClasses.map((item) => (
             <article
-              key={item.title}
+              key={item.number || item.subtitle}
               className="group overflow-hidden rounded-[1.8rem] border border-[#181310]/10 bg-white shadow-[0_20px_65px_rgba(55,35,20,.08)] transition duration-500 hover:-translate-y-2 hover:shadow-[0_28px_80px_rgba(55,35,20,.15)]"
             >
               <div className="relative aspect-[4/5] overflow-hidden bg-[#d7cec4]">
